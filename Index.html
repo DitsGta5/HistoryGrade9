@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Наука и Культура: Эпоха Мангытов</title>
+
+    <style>
+
+        :root {
+
+            --primary: #4a3728;
+
+            --secondary: #8d6e63;
+
+            --accent: #d4af37;
+
+            --bg: #fdfaf1;
+
+            --text: #2c2c2c;
+
+        }
+
+        * { box-sizing: border-box; }
+
+        body { font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; line-height: 1.7; background-color: var(--bg); color: var(--text); margin: 0; }
+
+       
+
+        header {
+
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('http://googleusercontent.com/image_collection/image_retrieval/3921920643753250055_0');
+
+            background-size: cover; background-position: center; color: white; padding: 100px 20px; text-align: center; border-bottom: 6px solid var(--accent);
+
+        }
+
+        header h1 { font-size: 3em; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin: 0; }
+
+
+
+        nav { background: var(--primary); display: flex; justify-content: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+
+        nav a { color: #f5f5f5; padding: 18px 25px; text-decoration: none; font-weight: bold; text-transform: uppercase; transition: 0.3s; font-size: 0.85em; letter-spacing: 1px; }
+
+        nav a:hover { color: var(--accent); background: rgba(255,255,255,0.1); }
+
+
+
+        .container { max-width: 1100px; margin: 40px auto; background: white; padding: 50px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-radius: 8px; }
+
+       
+
+        h2 { color: var(--primary); border-left: 10px solid var(--accent); padding-left: 20px; margin-bottom: 30px; text-transform: uppercase; }
+
+        h3 { color: var(--secondary); margin-top: 30px; }
+
+
+
+        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center; margin-bottom: 50px; }
+
+        .info-grid img { width: 100%; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+
+
+
+        .quote { background: #f0ebe0; padding: 30px; border-radius: 8px; font-style: italic; border-left: 5px solid var(--secondary); margin: 30px 0; }
+
+
+
+        /* Стили теста */
+
+        .quiz-card { background: #f9f7f2; padding: 30px; border: 1px solid #e0d9c5; border-radius: 10px; margin-bottom: 20px; }
+
+        .btn { background: var(--primary); color: white; border: none; padding: 15px 30px; cursor: pointer; border-radius: 5px; font-size: 1.1em; transition: 0.3s; }
+
+        .btn:hover { background: var(--accent); color: var(--primary); }
+
+        #quiz-result { margin-top: 20px; font-size: 1.3em; font-weight: bold; }
+
+
+
+        footer { background: var(--primary); color: #dcdcdc; padding: 40px; text-align: center; margin-top: 60px; }
+
+        section { scroll-margin-top: 80px; }
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+<header>
+
+    <h1>Эпоха Мангытов</h1>
+
+    <p style="font-size: 1.5em;">Наука, Культура и Архитектура Бухарского эмирата</p>
+
+    <h3 style="color: var(--accent);">Тоджибоев Шахзод</h3>
+
+</header>
+
+
+
+<nav>
+
+    <a href="#home">Главная</a>
+
+    <a href="#architecture">Архитектура</a>
+
+    <a href="#science">Наука</a>
+
+    <a href="#traditions">Быт и Традиции</a>
+
+    <a href="#quiz">Тест</a>
+
+    <a href="#contact">Связь</a>
+
+</nav>
+
+
+
+<section class="container" id="home">
+
+    <div class="info-grid">
+
+        <div>
+
+            <h2>Введение в эпоху</h2>
+
+            <p>В первой половине XIX века Бухара была центром исламской культуры. Здесь функционировало <strong>360 мечетей</strong>, количество которых символически соответствовало числу городских улиц. Это был период правления эмиров Шахмурада и Хайдара, которые уделяли значительное внимание просвещению и благоустройству городов.</p>
+
+            <p>Эмир Шахмурад (1785–1800), известный в народе как «Амири Джаннатмакон», лично занимался научными исследованиями, проживая в келье медресе Мир Араб.</p>
+
+        </div>
+
+        <img src="./вавав.png" alt="Historical portrait of a Mangyt dynasty ruler in traditional Central Asian attire with ornate robes and headwear, seated in a formal pose within an ornate interior setting with architectural details, representing the cultural and political authority of 19th century Bukhara">
+
+    </div>
+
+</section>
+
+
+
+<section class="container" id="architecture">
+
+    <h2>Шедевры зодчества</h2>
+
+
+
+    <div class="info-grid">
+
+        <img src="https://pastvu.com/_p/d/m/g/0/mg0qctvwqvfowfvezm.jpg" alt="Халифа Худойдод">
+
+        <div>
+
+            <h3>Комплекс Халифы Худойдода</h3>
+
+            <p>Этот архитектурный ансамбль в Бухаре, построенный в 1777–1855 годах, является образцом многофункционального строительства. Он включает в себя мечеть, медресе, сардобу (водохранилище) и кладбище. Медресе имело уникальную планировку с 39 кельями, где обучалось до 200 студентов.</p>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="info-grid">
+
+        <div>
+
+            <h3>Медресе Чор-Минор</h3>
+
+            <p>Построено в 1807 году на средства Халифа Ниязкула. Его четыре минарета с голубыми куполами символизируют четыре стороны света или, по некоторым версиям, четыре мировые религии. На втором этаже здания располагалась богатая библиотека.</p>
+
+        </div>
+
+        <img src="https://rusrav.uz/wp-content/uploads/photo-gallery/%D0%9C%D0%B5%D0%B4%D1%80%D0%B5%D1%81%D0%B5_%D0%A7%D0%BE%D1%80_%D0%9C%D0%B8%D0%BD%D0%BE%D1%80_4.jpg" alt="Чор-Минор">
+
+    </div>
+
+
+
+    <div class="info-grid">
+
+        <img src="./ChatGPT Image 3 февр. 2026 г., 21_13_09.png" alt="Чорсу Самарканд">
+
+        <div>
+
+            <h3>Самаркандский Чорсу</h3>
+
+            <p>Шестиугольный купольный торговый пассаж, восстановленный эмиром Шахмурадом на площади Регистан. Здание имело 12-гранную форму, что указывало на количество городских ворот. Сегодня оно включено в список Всемирного наследия ЮНЕСКО.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="container" id="science">
+
+    <h2>Наука и Образование</h2>
+
+    <div class="quote">
+
+        "В Бухаре есть 366 больших и малых медресе, где можно встретить студентов со всех стран, кроме Ирана. Они заканчивают 7-8 летний курс и возвращаются домой с багажом знаний." — А. Бёрнс.
+
+    </div>
+
+    <p>Основные направления развития науки:</p>
+
+    <ul>
+
+        <li><strong>История:</strong> Созданы фундаментальные труды «Тухфат аль-хоний», «Тарихи Амири Хайдар» и «Краткая история династии Мангытов».</li>
+
+        <li><strong>Медицина:</strong> Мухаммад Шариф Бухари написал комментарии к знаменитому труду «Мизан ат-тибб».</li>
+
+        <li><strong>Образование:</strong> Бухарские медресе считались лучшими в регионе, привлекая тысячи студентов.</li>
+
+    </ul>
+
+</section>
+
+<section class="container" id="traditions">
+
+    <h2>Быт и Традиции</h2>
+
+    <h3>Культурные и бытовые факты</h3>
+
+    <p><strong>Чайная культура:</strong> Именно при мангытах Бухара стала «чайной столицей». До этого пили в основном кофе или щербеты. Появились знаменитые чайханы, которые стали центрами мужского досуга и обсуждения новостей.</p>
+
+    <p><strong>Золотое шитье:</strong> В XIX веке искусство «зардузи» (шитье золотом) достигло пика. В эмирате работали специальные мастерские, которые шили только для эмира и его приближенных. Огромные халаты весили по нескольку килограммов из-за обилия золотых нитей.</p>
+
+    <p><strong>Библиотеки медресе:</strong> В Бухаре того времени хранились рукописи, которым не было равных в мире. Ученые из Европы и России приезжали в эмирате только ради того, чтобы взглянуть на редчайшие списки трудов Авиценны (Ибн Сины) или аль-Бируни.</p>
+
+    <h3>Наука и Просвещение (Джадидизм)</h3>
+
+    <p><strong>Первые газеты:</strong> В конце эпохи мангытов в Бухаре начали появляться первые газеты на таджикском и узбекском языках (например, «Бухорои Шариф»), что стало революцией в передаче информации.</p>
+
+    <p><strong>Ахмад Дониш «Калле»:</strong> Его прозвище «Калле» означало «Голова». Он был не просто ученым, а человеком, который первым предложил эмиру реформировать систему управления, вдохновившись поездками в Петербург.</p>
+
+    <p><strong>Методы обучения:</strong> В медресе того времени обучение было индивидуальным. Студент не просто слушал лекцию, а вступал в спор (мунозара) с учителем. Пока ученик не побеждал в споре или не доказывал свою правоту, тема не считалась пройденной.</p>
+
+    <h3>Архитектурные «секреты»</h3>
+
+    <p><strong>Ситораи Мохи-Хоса:</strong> Этот загородный дворец эмира называют «Дворцом звезд и луны». Интересно, что при его строительстве использовали смешение восточного стиля и европейской архитектуры (внутри были огромные венецианские зеркала и голландские печи).</p>
+
+    <p><strong>Зиндан (Тюрьма):</strong> Тюрьма Бухары того времени тоже была частью архитектурного облика. Знаменитая «Клоповная яма» (Канахона) наводила ужас на всех жителей Центральной Азии.</p>
+
+    <p><strong>Сардобы:</strong> В условиях пустыни архитекторы мангытов строили идеальные купольные водохранилища — сардобы. Благодаря форме купола и толщине стен вода там оставалась ледяной даже в 50-градусную жару.</p>
+
+</section>
+
+<section class="container" id="quiz">
+
+    <h2>Интерактивный тренажер знаний</h2>
+
+    <p>Выберите вариант ответа, чтобы сразу узнать, верный ли он.</p>
+
+
+
+    <div id="quiz-area">
+
+        <div class="quiz-card" id="q1-block">
+
+            <p><strong>1. Сколько мечетей было в Бухаре в первой половине XIX века?</strong></p>
+
+            <button class="btn-opt" onclick="checkAnswer(1, false, '360 мечетей')">120</button>
+
+            <button class="btn-opt" onclick="checkAnswer(1, true, '360 мечетей')">360</button>
+
+            <button class="btn-opt" onclick="checkAnswer(1, false, '360 мечетей')">366</button>
+
+            <div class="feedback" id="f1"></div>
+
+        </div>
+
+
+
+        <div class="quiz-card" id="q2-block">
+
+            <p><strong>2. Какое почетное имя получил в народе эмир Шахмурад за свою ученость?</strong></p>
+
+            <button class="btn-opt" onclick="checkAnswer(2, false, 'Амири Джаннатмакон')">Амири Лашкар</button>
+
+            <button class="btn-opt" onclick="checkAnswer(2, true, 'Амири Джаннатмакон')">Амири Джаннатмакон</button>
+
+            <button class="btn-opt" onclick="checkAnswer(2, false, 'Амири Джаннатмакон')">Амири Дониш</button>
+
+            <div class="feedback" id="f2"></div>
+
+        </div>
+
+
+
+        <div class="quiz-card" id="q3-block">
+
+            <p><strong>3. Кто был автором медицинского комментария «Мизан ат-тибб»?</strong></p>
+
+            <button class="btn-opt" onclick="checkAnswer(3, true, 'Мухаммад Шариф Бухари')">Мухаммад Шариф Бухари</button>
+
+            <button class="btn-opt" onclick="checkAnswer(3, false, 'Мухаммад Шариф Бухари')">Ахмад Дониш</button>
+
+            <button class="btn-opt" onclick="checkAnswer(3, false, 'Мухаммад Шариф Бухари')">Халифа Ниязкул</button>
+
+            <div class="feedback" id="f3"></div>
+
+        </div>
+
+
+
+        <div class="quiz-card" id="q4-block">
+
+            <p><strong>4. Какое здание в Самарканде имело 12-гранную форму в основании?</strong></p>
+
+            <button class="btn-opt" onclick="checkAnswer(4, false, 'Чорсу')">Медресе Тилля-Кори</button>
+
+            <button class="btn-opt" onclick="checkAnswer(4, true, 'Чорсу')">Купольное здание Чорсу</button>
+
+            <button class="btn-opt" onclick="checkAnswer(4, false, 'Чорсу')">Медресе Улугбека</button>
+
+            <div class="feedback" id="f4"></div>
+
+        </div>
+
+
+
+        <div class="quiz-card" id="q5-block">
+
+            <p><strong>5. На чьи средства было построено медресе в Карши во времена эмира Хайдара?</strong></p>
+
+            <button class="btn-opt" onclick="checkAnswer(5, false, 'женщины по имени Гули')">На средства самого эмира</button>
+
+            <button class="btn-opt" onclick="checkAnswer(5, true, 'женщины по имени Гули')">На средства женщины по имени Гули</button>
+
+            <button class="btn-opt" onclick="checkAnswer(5, false, 'женщины по имени Гули')">На средства купцов города</button>
+
+            <div class="feedback" id="f5"></div>
+
+        </div>
+
+        <div class="quiz-card" id="q6-block">
+
+            <p><strong>6. Какое искусство достигло своего расцвета в мастерских эмира Бухары?</strong></p>
+
+            <button class="btn-opt" onclick="checkAnswer(6, true, 'Золотое шитье (зардузи)')">Золотое шитье (зардузи)</button>
+
+            <button class="btn-opt" onclick="checkAnswer(6, false, 'Золотое шитье (зардузи)')">Керамика</button>
+
+            <button class="btn-opt" onclick="checkAnswer(6, false, 'Золотое шитье (зардузи)')">Каллиграфия</button>
+
+            <div class="feedback" id="f6"></div>
+
+        </div>
+
+        <div class="quiz-card" id="q7-block">
+
+            <p><strong>7. Кто был лидером просветителей и критиком старых порядков при мангытах?</strong></p>
+
+            <button class="btn-opt" onclick="checkAnswer(7, false, 'Ахмад Дониш')">Эмир Шахмурад</button>
+
+            <button class="btn-opt" onclick="checkAnswer(7, true, 'Ахмад Дониш')">Ахмад Дониш</button>
+
+            <button class="btn-opt" onclick="checkAnswer(7, false, 'Ахмад Дониш')">Халифа Ниязкул</button>
+
+            <div class="feedback" id="f7"></div>
+
+        </div>
+
+        <div class="quiz-card" id="q8-block">
+
+            <p><strong>8. Что символизировали 4 минарета медресе Чор-Минор?</strong></p>
+
+            <button class="btn-opt" onclick="checkAnswer(8, true, 'Четыре стороны света')">Четыре стороны света</button>
+
+            <button class="btn-opt" onclick="checkAnswer(8, false, 'Четыре стороны света')">Четыре мировые религии</button>
+
+            <button class="btn-opt" onclick="checkAnswer(8, false, 'Четыре стороны света')">Четыре династии халифов</button>
+
+            <div class="feedback" id="f8"></div>
+
+        </div>
+
+        <div class="quiz-card" id="q9-block">
+
+            <p><strong>9. Какое название носил загородный дворец эмира в Бухаре?</strong></p>
+
+            <button class="btn-opt" onclick="checkAnswer(9, false, 'Ситораи Мохи-Хоса')">Арк</button>
+
+            <button class="btn-opt" onclick="checkAnswer(9, true, 'Ситораи Мохи-Хоса')">Ситораи Мохи-Хоса</button>
+
+            <button class="btn-opt" onclick="checkAnswer(9, false, 'Ситораи Мохи-Хоса')">Ляби Хауз</button>
+
+            <div class="feedback" id="f9"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<style>
+
+    /* Дополнительные стили для кнопок и отзывов */
+
+    .btn-opt {
+
+        display: block;
+
+        width: 100%;
+
+        text-align: left;
+
+        padding: 10px 15px;
+
+        margin: 5px 0;
+
+        background: white;
+
+        border: 1px solid #ccc;
+
+        cursor: pointer;
+
+        border-radius: 4px;
+
+        transition: 0.2s;
+
+    }
+
+    .btn-opt:hover { background: #f0f0f0; }
+
+    .feedback {
+
+        margin-top: 10px;
+
+        font-weight: bold;
+
+        padding: 10px;
+
+        border-radius: 4px;
+
+        display: none; /* Скрыто по умолчанию */
+
+    }
+
+    .correct-msg { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+
+    .wrong-msg { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+
+</style>
+
+
+
+<script>
+
+    function checkAnswer(questionNum, isCorrect, correctAnswerText) {
+
+        const feedbackDiv = document.getElementById('f1'); // Заглушка
+
+        const currentFeedback = document.getElementById('f' + questionNum);
+
+        const currentBlock = document.getElementById('q' + questionNum + '-block');
+
+       
+
+        // Показываем блок с ответом
+
+        currentFeedback.style.display = 'block';
+
+       
+
+        if (isCorrect) {
+
+            currentFeedback.innerHTML = "✓ Правильно!";
+
+            currentFeedback.className = "feedback correct-msg";
+
+        } else {
+
+            currentFeedback.innerHTML = "✗ Неправильно. Правильный ответ: " + correctAnswerText;
+
+            currentFeedback.className = "feedback wrong-msg";
+
+        }
+
+
+
+        // Отключаем кнопки после ответа, чтобы нельзя было перевыбрать
+
+        const buttons = currentBlock.querySelectorAll('.btn-opt');
+
+        buttons.forEach(btn => {
+
+            btn.disabled = true;
+
+            btn.style.opacity = "0.6";
+
+            btn.style.cursor = "default";
+
+        });
+
+    }
+
+</script>
+
+
+
+<section class="container" id="contact">
+
+    <h2>Связь с нами</h2>
+
+    <p>Отправьте нам сообщение для уточнения информации или добавления новых фактов.</p>
+
+    <form onsubmit="alert('Спасибо! Ваши правки приняты на рассмотрение.'); return false;">
+
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+
+            <input type="text" placeholder="Ваше имя" required style="padding:15px; border:1px solid #ccc; border-radius:5px;">
+
+            <input type="email" placeholder="Ваш Email" required style="padding:15px; border:1px solid #ccc; border-radius:5px;">
+
+        </div>
+
+        <textarea placeholder="Ваше сообщение..." required style="width:100%; height:150px; padding:15px; border:1px solid #ccc; border-radius:5px; margin-top:20px;"></textarea>
+
+        <button type="submit" class="btn" style="margin-top:20px;">Отправить сообщение</button>
+
+    </form>
+
+</section>
+
+
+
+<footer>
+
+    <p>&copy; 2026 Культурно-исторический портал "Мангыты". <br> Основано на материалах учебника Истории Узбекистана для 9 класса.</p>
+
+</footer>
+
+
+
+<script>
+
+    function calculateResult() {
+
+        const answers = document.querySelectorAll('input[type="radio"]:checked');
+
+        let score = 0;
+
+        answers.forEach(ans => {
+
+            score += parseInt(ans.value);
+
+        });
+
+
+
+        const resultDiv = document.getElementById('quiz-result');
+
+        if (answers.length < 4) {
+
+            resultDiv.innerHTML = "Пожалуйста, ответьте на все вопросы!";
+
+            resultDiv.style.color = "orange";
+
+        } else {
+
+            resultDiv.innerHTML = "Ваш результат: " + score + " из 4 баллов!";
+
+            resultDiv.style.color = score >= 3 ? "green" : "red";
+
+        }
+
+    }
+
+</script>
+
+
+
+</body>
+
+</html>
